@@ -32,9 +32,9 @@ spec:
         # specified in the volume mount
         {{- $cpath := .Values.configs.path }}
         {{- range $path, $_ :=  .Files.Glob  $cpath }}
-        - name: {{ base $path | trimSuffix ".yaml" }}
+        - name: {{ base $path | trimSuffix ".toml" }}
           configMap:
-            name: {{ base $path | trimSuffix ".yaml" }}-configmap
+            name: {{ base $path | trimSuffix ".toml" }}-configmap
         {{- end }}
       containers:
         - name: {{ .Chart.Name }}
@@ -44,8 +44,8 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           volumeMounts:
           {{- range $path, $_ :=  .Files.Glob  $cpath }}
-            - name: {{ base $path | trimSuffix ".yaml" }}
-              mountPath: /configs/{{ base $path | trimSuffix ".yaml" }}
+            - name: {{ base $path | trimSuffix ".toml" }}
+              mountPath: /configs/{{ base $path | trimSuffix ".toml" }}
           {{- end }}
           ports:
             - name: redis

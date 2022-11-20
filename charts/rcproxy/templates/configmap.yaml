@@ -2,7 +2,7 @@
 {{- $cpath := .Values.configs.path }}
 {{- $cnamespace := .Release.Namespace }}
 {{- range $path, $_ :=  .Files.Glob  $cpath }}
-{{- $currentName := printf "%s-%s" (base $path | trimSuffix ".yaml") ("configmap") }}
+{{- $currentName := printf "%s-%s" (base $path | trimSuffix ".toml") ("configmap") }}
 {{- if not (lookup "v1" "ConfigMap" $cnamespace $currentName) }}
 apiVersion: v1
 kind: ConfigMap

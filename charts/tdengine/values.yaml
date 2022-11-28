@@ -263,3 +263,9 @@ taoscfg:
   # -1 no limit (default)
   # 0  no query allowed, queries are disabled
   #TAOS_QUERY_BUFFER_SIZE: "-1"
+
+serviceMonitor:
+  enabled: false
+  interval: 30s
+  scrapeTimeout: 10s
+  namespace: ""

@@ -83,3 +83,9 @@ affinity: {}
 
 configs:
   path: "configs/*.toml"
+
+serviceMonitor:
+  enabled: false
+  interval: 30s
+  scrapeTimeout: 10s
+  namespace: ""

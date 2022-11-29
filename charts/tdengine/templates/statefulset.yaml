@@ -4,12 +4,12 @@ metadata:
   name: {{ include "tdengine.fullname" . }}
   labels:
     {{- include "tdengine.labels" . | nindent 4 }}
-    app: taosd
     app.kubernetes.io/name: {{ .Release.Name }}
     helm.sh/chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/version: {{ .Chart.AppVersion }}
+    app: taosd
 spec:
   serviceName: {{ include "tdengine.fullname" . }}
   replicas: {{ .Values.replicaCount }}
@@ -95,13 +95,13 @@ spec:
           readinessProbe:
             exec:
               command:
-                - taos-check
+              - taos-check
             initialDelaySeconds: 5
             timeoutSeconds: 5000
           livenessProbe:
             exec:
               command:
-                - taos-check
+              - taos-check
             initialDelaySeconds: 15
             periodSeconds: 20
           securityContext:
@@ -142,7 +142,9 @@ spec:
     spec:
       accessModes:
         - "ReadWriteOnce"
+      {{- if .Values.storage.className }}
       storageClassName: "{{ .Values.storage.className }}"
+      {{- end }}
       resources:
         requests:
           storage: "{{ .Values.storage.dataSize }}"
@@ -151,7 +153,9 @@ spec:
     spec:
       accessModes:
         - "ReadWriteOnce"
+      {{- if .Values.storage.className }}
       storageClassName: "{{ .Values.storage.className }}"
+      {{- end }}
       resources:
         requests:
           storage: "{{ .Values.storage.logSize }}"

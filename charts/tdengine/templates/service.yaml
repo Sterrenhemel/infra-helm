@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: {{ include "tdengine.fullname" . }}
   labels:
+    serviceName: "tdengine"
     {{- include "tdengine.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}

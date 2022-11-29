@@ -14,9 +14,10 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: {{ .Release.Name }}
+      serviceName: "tdengine"
   endpoints:
-    - port: tdengine-exporter
+    - targetPort: 6041
+      path: /metrics
       interval: {{ .Values.serviceMonitor.interval }}
       scrapeTimeout: {{ .Values.serviceMonitor.scrapeTimeout }}
   namespaceSelector:

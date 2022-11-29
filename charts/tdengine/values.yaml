@@ -8,7 +8,7 @@ image:
   prefix: tdengine/tdengine
   #pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  #tag: "2.4.0.5"
+#  tag: "latest"
 
 service:
   # ClusterIP is the default service type, use NodeIP only if you know what you are doing.

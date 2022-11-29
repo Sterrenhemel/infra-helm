@@ -23,6 +23,21 @@ entries:
     version: 0.1.1
   tdengine:
   - apiVersion: v2
+    appVersion: 3.0.0.0
+    created: "2022-11-29T02:55:35.952352711Z"
+    description: TDengine Cluster Chart for Kubenetes
+    digest: ed2f9a34e8fb43ab10ae6c5d502b935ad1a124a886687e05aa429551cb85a531
+    icon: https://www.taosdata.com/images/taosdata-logo.png
+    maintainers:
+    - email: linhe.huo@gmail.com
+      name: Huo Linhe
+      url: https://github.com/zitsen
+    name: tdengine
+    type: application
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/tdengine-3.0.0/tdengine-3.0.0.tgz
+    version: 3.0.0
+  - apiVersion: v2
     appVersion: 3.0.1.8
     created: "2022-11-29T02:38:35.94884181Z"
     description: TDengine Cluster Chart for Kubenetes
@@ -82,4 +97,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tdengine-0.3.1/tdengine-0.3.1.tgz
     version: 0.3.1
-generated: "2022-11-29T02:38:35.948860011Z"
+generated: "2022-11-29T02:55:35.952369111Z"

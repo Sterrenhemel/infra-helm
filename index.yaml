@@ -3,6 +3,16 @@ entries:
   rcproxy:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2022-11-29T02:38:35.789436174Z"
+    description: A Helm chart for Kubernetes
+    digest: 419ea4c528f1140cd09b07b0ceab4b7820c81a63bb4127a04d377ea71d1c69e2
+    name: rcproxy
+    type: application
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/rcproxy-0.1.2/rcproxy-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2022-11-28T04:39:52.8386544Z"
     description: A Helm chart for Kubernetes
     digest: a4e4bb1f536d26c00196333da2aecb011a9bc0998ed5258c19d4165573ae45c6
@@ -12,6 +22,21 @@ entries:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/rcproxy-0.1.1/rcproxy-0.1.1.tgz
     version: 0.1.1
   tdengine:
+  - apiVersion: v2
+    appVersion: 3.0.1.8
+    created: "2022-11-29T02:38:35.94884181Z"
+    description: TDengine Cluster Chart for Kubenetes
+    digest: cae512ee742ce7fd6c62bbd7c0ed60566edf26257df3abadfe8e6fa5cd0cdfa5
+    icon: https://www.taosdata.com/images/taosdata-logo.png
+    maintainers:
+    - email: linhe.huo@gmail.com
+      name: Huo Linhe
+      url: https://github.com/zitsen
+    name: tdengine
+    type: application
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/tdengine-0.3.5/tdengine-0.3.5.tgz
+    version: 0.3.5
   - apiVersion: v2
     appVersion: 3.0.1.8
     created: "2022-11-29T02:26:29.746770319Z"
@@ -57,4 +82,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tdengine-0.3.1/tdengine-0.3.1.tgz
     version: 0.3.1
-generated: "2022-11-29T02:26:29.746786019Z"
+generated: "2022-11-29T02:38:35.948860011Z"

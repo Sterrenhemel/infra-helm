@@ -1,5 +1,15 @@
 apiVersion: v1
 entries:
+  cfk-kafka-connect:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-11-30T02:19:18.089776622Z"
+    description: A Helm chart for Confluent Kafka Connect on Kubernetes
+    digest: 9ac08b1bc5e7076bcf4b4eaaf66095a5e8cb6cfe7760f150c308db0784cfa775
+    name: cfk-kafka-connect
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/cfk-kafka-connect-0.1.0/cfk-kafka-connect-0.1.0.tgz
+    version: 0.1.0
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
@@ -107,4 +117,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tdengine-0.3.1/tdengine-0.3.1.tgz
     version: 0.3.1
-generated: "2022-11-29T15:51:08.432138286Z"
+generated: "2022-11-30T02:19:18.089791622Z"

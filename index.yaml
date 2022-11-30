@@ -117,4 +117,24 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tdengine-0.3.1/tdengine-0.3.1.tgz
     version: 0.3.1
-generated: "2022-11-30T02:19:18.089791622Z"
+  tidb-cluster:
+  - apiVersion: v1
+    created: "2022-11-30T04:31:32.677231712Z"
+    deprecated: true
+    description: DEPRECATED(refer new instructions at https://docs.pingcap.com/tidb-in-kubernetes
+      for tidb-operator v1.1 and above) - A Helm chart for TiDB Cluster
+    digest: 8ff2def4bd4ac27049e77120abaaed13203707d91fb821f148855660418224fd
+    home: https://github.com/pingcap/tidb-operator
+    keywords:
+    - newsql
+    - htap
+    - database
+    - mysql
+    - raft
+    name: tidb-cluster
+    sources:
+    - https://github.com/pingcap/tidb-operator
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-v1-canary/tidb-cluster-v1-canary.tgz
+    version: v1-canary
+generated: "2022-11-30T04:31:32.677247712Z"

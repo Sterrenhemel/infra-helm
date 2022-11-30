@@ -1,0 +1,18 @@
+{{- if .Values.ngMonitor.create }}
+apiVersion: pingcap.com/v1alpha1
+kind: TidbNGMonitoring
+metadata:
+  name: {{ template "cluster.name" . }}-NGMonitor
+  namespace: {{ .Release.Namespace }}
+spec:
+  clusters:
+    - name: {{ template "cluster.name" . }}
+      namespace: {{ .Release.Namespace }}
+  ngMonitoring:
+    requests:
+      storage: 1Gi
+    version: {{ .Values.ngMonitor.version }}
+    # storageClassName: default
+    baseImage: {{ .Values.ngMonitor.image }}
+    imagePullPolicy: {{ .Values.ngMonitor.imagePullPolicy }}
+{{- end }}

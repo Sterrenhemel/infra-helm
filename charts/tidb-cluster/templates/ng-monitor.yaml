@@ -2,7 +2,7 @@
 apiVersion: pingcap.com/v1alpha1
 kind: TidbNGMonitoring
 metadata:
-  name: {{ template "cluster.name" . }}-NGMonitor
+  name: {{ template "cluster.name" . }}-ng-monitor
   namespace: {{ .Release.Namespace }}
 spec:
   clusters:

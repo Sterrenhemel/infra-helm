@@ -130,7 +130,7 @@ spec:
   {{- if .Values.tidb.priorityClassName }}
     priorityClassName: {{ .Values.tidb.priorityClassName }}
   {{- end }}
-    binlogEnabled: {{ .Values.ticdc.create | default false }}
+    binlogEnabled: false
     maxFailoverCount: {{ .Values.tidb.maxFailoverCount | default 3 }}
     separateSlowLog: {{ .Values.tidb.separateSlowLog | default false }}
     slowLogTailer:

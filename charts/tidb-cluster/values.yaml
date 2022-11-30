@@ -607,7 +607,7 @@ ticdc:
   create: false
   replicas: 0
   image: pingcap/ticdc
-  version: v6.1.0
+  version: v6.2.0
   imagePullPolicy: IfNotPresent
 
 ngMonitor:

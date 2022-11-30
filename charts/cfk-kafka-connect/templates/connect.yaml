@@ -1,0 +1,34 @@
+apiVersion: platform.confluent.io/v1beta1
+kind: Connect
+metadata:
+  name: connect
+  # annotations:
+  #   platform.confluent.io/confluent-hub-install-extra-args: “--worker-configs /dev/null --component-dir /mnt/plugins”
+spec:
+  replicas: {{ .Values.replicaCount }}
+  image:
+    application: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+    init: {{ .Values.init.image }}
+  podTemplate:
+    resources:
+      {{- toYaml .Values.resources | nindent 6 }}
+  build:
+    type: onDemand
+    onDemand:
+      plugins:
+        locationType: confluentHub
+        confluentHub:
+          {{- if .Values.connect.plugins }}
+{{ toYaml .Values.connect.plugins | trim | indent 8 }}
+          {{- end}}
+      storageLimit: 2G
+  dependencies:
+    kafka:
+      bootstrapEndpoint: {{ .Values.kafka.bootstrapServers }}
+      tls:
+        enabled: false
+        ignoreTrustStoreConfig: true
+    {{- if .Values.schemaRegistry.enable }}
+    schemaRegistry:
+      url: {{ .Values.schemaRegistry.url }}
+    {{- end}}

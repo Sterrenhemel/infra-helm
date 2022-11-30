@@ -33,6 +33,7 @@ spec:
   helper:
     image: {{ .Values.helper.image }}
   pd:
+    enableDashboardInternalProxy: true
     replicas: {{ .Values.pd.replicas }}
     image: {{ .Values.pd.image }}
     imagePullPolicy: {{ .Values.pd.imagePullPolicy | default "IfNotPresent" }}

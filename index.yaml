@@ -10,6 +10,18 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/cfk-kafka-connect-0.1.0/cfk-kafka-connect-0.1.0.tgz
     version: 0.1.0
+  cloudflare-tunnel:
+  - apiVersion: v2
+    appVersion: 0.6.0
+    created: "2022-11-30T16:59:16.278966778Z"
+    description: Manage and use cloudflare tunnels (also known as argo tunnels) on
+      k8s cluster
+    digest: ee1ce9eb0a1305705bb0e8c14ddf16f5f87b73d79083e156e3c8c7c660b69221
+    name: cloudflare-tunnel
+    type: application
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/cloudflare-tunnel-0.2.0/cloudflare-tunnel-0.2.0.tgz
+    version: 0.2.0
   cp-kafka-connect:
   - apiVersion: v1
     appVersion: "1.0"
@@ -258,4 +270,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-v1-canary/tidb-cluster-v1-canary.tgz
     version: v1-canary
-generated: "2022-11-30T06:00:59.149686982Z"
+generated: "2022-11-30T16:59:16.279059778Z"

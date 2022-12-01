@@ -13,6 +13,17 @@ entries:
   cloudflare-tunnel:
   - apiVersion: v2
     appVersion: 0.6.0
+    created: "2022-12-01T12:42:40.222340637Z"
+    description: Manage and use cloudflare tunnels (also known as argo tunnels) on
+      k8s cluster
+    digest: b62613424dff6e75bf907b964b55057bc7778b400c58b1d05885a4a76e41fcbb
+    name: cloudflare-tunnel
+    type: application
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/cloudflare-tunnel-0.2.1/cloudflare-tunnel-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: 0.6.0
     created: "2022-11-30T16:59:16.278966778Z"
     description: Manage and use cloudflare tunnels (also known as argo tunnels) on
       k8s cluster
@@ -130,6 +141,23 @@ entries:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tdengine-0.3.1/tdengine-0.3.1.tgz
     version: 0.3.1
   tidb-cluster:
+  - apiVersion: v1
+    created: "2022-12-01T12:42:40.377150893Z"
+    description: A Helm chart for TiDB Cluster
+    digest: 63071eba9d9d8486b3c1ce335e471f40a1b3f576f1d9b8c03faa63a21d62b24c
+    home: https://github.com/pingcap/tidb-operator
+    keywords:
+    - newsql
+    - htap
+    - database
+    - mysql
+    - raft
+    name: tidb-cluster
+    sources:
+    - https://github.com/pingcap/tidb-operator
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-1.0.7/tidb-cluster-1.0.7.tgz
+    version: 1.0.7
   - apiVersion: v1
     created: "2022-11-30T06:00:59.149641481Z"
     description: A Helm chart for TiDB Cluster
@@ -270,4 +298,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-v1-canary/tidb-cluster-v1-canary.tgz
     version: v1-canary
-generated: "2022-11-30T16:59:16.279059778Z"
+generated: "2022-12-01T12:42:40.377228793Z"

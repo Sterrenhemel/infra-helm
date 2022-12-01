@@ -610,6 +610,14 @@ ticdc:
   version: v6.2.0
   imagePullPolicy: IfNotPresent
 
+  resources:
+    limits: { }
+    #   cpu: 8000m
+    #   memory: 8Gi
+    requests: { }
+    #   cpu: 4000m
+    #   memory: 4Gi
+
 ngMonitor:
   create: true
   image: pingcap/ng-monitoring

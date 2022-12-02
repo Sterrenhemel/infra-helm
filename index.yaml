@@ -141,6 +141,17 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/elasticvue-0.1.0/elasticvue-0.1.0.tgz
     version: 0.1.0
+  httplog:
+  - apiVersion: v2
+    appVersion: 1.0.5
+    created: "2022-12-02T14:50:32.381953189Z"
+    description: A Helm chart for Kubernetes
+    digest: cffa89903e5a172cda08f20200dda72d92aff9c5d084439f37eee2c38bb58f3e
+    name: httplog
+    type: application
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/httplog-0.1.0/httplog-0.1.0.tgz
+    version: 0.1.0
   rcproxy:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -447,4 +458,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-v1-canary/tidb-cluster-v1-canary.tgz
     version: v1-canary
-generated: "2022-12-02T09:05:36.220541896Z"
+generated: "2022-12-02T14:50:32.381988788Z"

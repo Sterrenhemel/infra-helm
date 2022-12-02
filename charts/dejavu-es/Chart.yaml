@@ -8,7 +8,7 @@ dependencies:
   version: 1.x.x
 description: dejavu is the missing web UI for Elasticsearch.
 engine: gotpl
-name: dejavu
+name: dejavu-es
 version: 2.0.0
 home: https://github.com/appbaseio/dejavu
 icon: https://raw.githubusercontent.com/appbaseio/dejavu/bb83b68b7d726dfb3bc58380892d63b9cc585131/packages/dejavu-main/site/src/images/dejavu-logo.svg

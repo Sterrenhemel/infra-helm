@@ -142,6 +142,23 @@ entries:
     version: 0.3.1
   tidb-cluster:
   - apiVersion: v1
+    created: "2022-12-02T03:36:02.831461697Z"
+    description: A Helm chart for TiDB Cluster
+    digest: c66bc12ccdbbf7555d7ddb32cc2f0fbab2e9c927f1bc2f876f1ac256f0c50b7e
+    home: https://github.com/pingcap/tidb-operator
+    keywords:
+    - newsql
+    - htap
+    - database
+    - mysql
+    - raft
+    name: tidb-cluster
+    sources:
+    - https://github.com/pingcap/tidb-operator
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-1.0.9/tidb-cluster-1.0.9.tgz
+    version: 1.0.9
+  - apiVersion: v1
     created: "2022-12-02T03:19:09.271253746Z"
     description: A Helm chart for TiDB Cluster
     digest: dad6fb436d91f59fa34f9bfe1e255eddaaa2fa3de554530a81278935d1ac2e12
@@ -315,4 +332,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-v1-canary/tidb-cluster-v1-canary.tgz
     version: v1-canary
-generated: "2022-12-02T03:19:09.271305247Z"
+generated: "2022-12-02T03:36:02.831519497Z"

@@ -144,6 +144,16 @@ entries:
   httplog:
   - apiVersion: v2
     appVersion: 1.0.5
+    created: "2022-12-02T15:28:12.470976677Z"
+    description: A Helm chart for Kubernetes
+    digest: df4c63c8eb692ed42f810d98c8c537920f31d71bcdf630bd777f4dcf15def4c1
+    name: httplog
+    type: application
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/httplog-0.1.1/httplog-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.5
     created: "2022-12-02T14:50:32.381953189Z"
     description: A Helm chart for Kubernetes
     digest: cffa89903e5a172cda08f20200dda72d92aff9c5d084439f37eee2c38bb58f3e
@@ -458,4 +468,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-v1-canary/tidb-cluster-v1-canary.tgz
     version: v1-canary
-generated: "2022-12-02T14:50:32.381988788Z"
+generated: "2022-12-02T15:28:12.471029177Z"

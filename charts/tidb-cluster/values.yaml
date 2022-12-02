@@ -548,7 +548,7 @@ monitor:
       #  memory: 64Mi
   grafana:
     create: true
-    image: grafana/grafana:6.1.6
+    image: grafana/grafana:9.3.1
     imagePullPolicy: IfNotPresent
     logLevel: info
     resources:
@@ -573,7 +573,7 @@ monitor:
       type: ClusterIP
       portName: http-grafana
   prometheus:
-    image: prom/prometheus:v2.27.1
+    image: prom/prometheus:v2.40.5
     imagePullPolicy: IfNotPresent
     logLevel: info
     resources:

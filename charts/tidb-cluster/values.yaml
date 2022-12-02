@@ -611,10 +611,10 @@ ticdc:
   imagePullPolicy: IfNotPresent
 
   resources:
-    limits: { }
+    limits: {}
     #   cpu: 8000m
     #   memory: 8Gi
-    requests: { }
+    requests: {}
     #   cpu: 4000m
     #   memory: 4Gi
 

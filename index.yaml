@@ -120,6 +120,17 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/dejavu-es-2.0.0/dejavu-es-2.0.0.tgz
     version: 2.0.0
+  elasticvue:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-12-02T09:00:14.399010636Z"
+    description: A Helm chart for Kubernetes
+    digest: 50bafad32967809301812a796d5c3d7667e0a5889e378e61c71926d41b5eeeac
+    name: elasticvue
+    type: application
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/elasticvue-0.1.0/elasticvue-0.1.0.tgz
+    version: 0.1.0
   rcproxy:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -426,4 +437,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-v1-canary/tidb-cluster-v1-canary.tgz
     version: v1-canary
-generated: "2022-12-02T08:39:32.650988775Z"
+generated: "2022-12-02T09:00:14.399148241Z"

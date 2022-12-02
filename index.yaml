@@ -72,6 +72,31 @@ entries:
   dejavu-es:
   - apiVersion: v2
     appVersion: 3.4.0
+    created: "2022-12-02T08:39:32.650930074Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: dejavu is the missing web UI for Elasticsearch.
+    digest: 3a2ca6470a6055e08c1f23017a9db7db3dde05ed56e4089137842a9e4078376b
+    home: https://github.com/appbaseio/dejavu
+    icon: https://raw.githubusercontent.com/appbaseio/dejavu/bb83b68b7d726dfb3bc58380892d63b9cc585131/packages/dejavu-main/site/src/images/dejavu-logo.svg
+    keywords:
+    - elasticsearch
+    - web ui
+    maintainers:
+    - email: 29ygq@sina.com
+      name: Chinge Yang
+    name: dejavu-es
+    sources:
+    - https://hub.docker.com/r/appbaseio/dejavu
+    urls:
+    - https://github.com/Sterrenhemel/infra-helm/releases/download/dejavu-es-2.0.1/dejavu-es-2.0.1.tgz
+    version: 2.0.1
+  - apiVersion: v2
+    appVersion: 3.4.0
     created: "2022-12-02T08:37:49.080826346Z"
     dependencies:
     - name: common
@@ -401,4 +426,4 @@ entries:
     urls:
     - https://github.com/Sterrenhemel/infra-helm/releases/download/tidb-cluster-v1-canary/tidb-cluster-v1-canary.tgz
     version: v1-canary
-generated: "2022-12-02T08:37:49.080859545Z"
+generated: "2022-12-02T08:39:32.650988775Z"

@@ -521,7 +521,7 @@ monitor:
   storageClassName: local-storage
   storage: 10Gi
   initializer:
-    image: pingcap/tidb-monitor-initializer:v6.1.0
+    image: pingcap/tidb-monitor-initializer:v6.4.0
     imagePullPolicy: IfNotPresent
     config:
       K8S_PROMETHEUS_URL: http://prometheus-k8s.monitoring.svc:9090

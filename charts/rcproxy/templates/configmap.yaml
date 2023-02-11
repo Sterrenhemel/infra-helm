@@ -1,6 +1,7 @@
 {{- $currentScope := .}}
 {{- $cpath := .Values.configs.path }}
 {{- $cnamespace := .Release.Namespace }}
+{{- $labels := include "infra.labels" . }}
 {{- range $path, $_ :=  .Files.Glob  $cpath }}
 {{- $currentName := printf "%s-%s" (base $path | trimSuffix ".toml") ("configmap") }}
 {{- if not (lookup "v1" "ConfigMap" $cnamespace $currentName) }}
@@ -9,11 +10,7 @@ kind: ConfigMap
 metadata:
   name: {{ $currentName }}
   labels:
-    app.kubernetes.io/name: {{ .Release.Name }}
-    helm.sh/chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/version: {{ .Chart.AppVersion }}
+    {{- $labels | nindent 4 }}
 data:
   {{- with $currentScope}}
     {{ base $path }}: |
